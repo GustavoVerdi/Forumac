@@ -1,0 +1,65 @@
+/* RESPONSIVO */
+@media (min-width: 0px){
+    /* celulares */
+    article {width: 100%;}
+}
+
+@media (min-width: 400px){
+    /* tablets */
+    article {width: 75%;}
+}
+
+@media (min-width: 900px){
+    /* monitores */
+    article {width: 50%;}
+}
+
+.navlink li ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#containernav {
+    width: 100%;
+    background-color: #333;
+}
+
+.navlink {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navlink li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: white;
+}
+
+#containercenter {
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.topic {
+    background: #c2b5b5;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
