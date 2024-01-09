@@ -1,0 +1,74 @@
+/* RESPONSIVO */
+@media (min-width: 0px){
+    /* celulares */
+    article {width: 100%;}
+}
+
+@media (min-width: 400px){
+    /* tablets */
+    article {width: 75%;}
+}
+
+@media (min-width: 900px){
+    /* monitores */
+    article {width: 50%;}
+}
+
+body{
+    background-color: aliceblue;
+    margin: auto;
+}
+
+
+/*Navbar*/
+.navbarmenu{
+    width: auto;
+    height: 50px;
+    margin: px;
+    writing-mode: horizontal-tb;
+    border: 1px inherit black;
+    display: grid;
+    background-color: red;
+    flex-wrap: wrap;
+}
+/*Lista Navbar Elementos*/
+.linavbar{
+    text-decoration: none;
+    color: white;
+    padding: 5PX;
+    border-radius: 15PX;
+}
+.ulcabecalho{
+    list-style: none;
+    display: flex;
+    color: #c9c8c8;
+    justify-content: right;
+}
+li{
+    padding: 9px;
+}
+a:hover{
+    background-color: rgb(90, 79, 79);
+}
+/*Template página inicial*/
+#templateinde{
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+}
+
+.topic {
+    background: #c2b5b5;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#template {
+    width: 100%;
+    height: 300px;
+    padding-inline: 5px;
+    text-align: center;
+    object-fit: cover;
+    display: inline-block;
+}
