@@ -8,29 +8,33 @@
 </head>
 <body>
     <header>
-        <!-- NAVBAR-->
-        <nav  class="navbarmenu" style="width: 100%;height: 75px;" >
+        <!-- NAVBAR -->
+        <div class="navbarmenu" style="width: 100%; height: 75px;">
             <div class="logo">
-                <a href="#"><img src="./img/logo.png"
-                 style="width: 5%;left: 15px;position: absolute;margin: 3.6px">
-                </a>
+                <a href="#"><img src="./img/logo.png" style="width: 5%; left: 15px; position: absolute; margin: 3.6px;"></a>
             </div>
-            <ul colspan="3"  class="ulcabecalho">
+            <ul colspan="3" class="ulcabecalho">
                 <li><a href="index.html" class="linavbar">Home</a></li>
                 <li><a href="Diss.html" class="linavbar">Discussões</a></li>
                 <li><a href="discord.html" class="linavbar">Discord</a></li>
                 <li><a href="mods.html" class="linavbar">Mods</a></li>
-                <li><a href="login.html" class="linavbar">Login</a></li>
+                <li><a href="login.html" class="linavbar" style="background-color: black;">Login</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
-    <div id="templateindex">
-        <a id="template"><img id="template"src="./img/template1.png">
-        </a>
-    </div>
-    <div id="containercenter">
-        <h1>Tópicos</h1>
 
+    <div id="templateindex">
+        <img id="template" src="./img/template1.png" alt="Template Image">
+    </div>
+
+    <div id="containercenter">
+        <h1 style="display: inline-block; text-align: center; font-size: 22px;">Tópicos</h1>
+        <nav class="nav">
+        <div class="topic">
+            <h3>Título</h3>
+            <p>Conteúdo da segunda dúvida.</p>
+        </div>
+    </nav>
         <?php
         include 'conexao.php';
 
@@ -69,6 +73,9 @@
         }
         ?>
     </div>
-    <footer></footer>
+    <footer>
+        <div class="rowfooter"></div>
+        <p>teste</p>
+    </footer>
 </body>
 </html>
