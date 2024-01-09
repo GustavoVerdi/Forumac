@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="custom.css">
     <title>Fórum</title>
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <!-- NAVBAR -->
-        <div class="navbarmenu" style="width: 100%; height: 75px;">
+        <div class="navbarmenu">
             <div class="logo">
-                <a href="#"><img src="./img/logo.png" style="width: 5%; left: 15px; position: absolute; margin: 3.6px;"></a>
+                <a href="#"><img src="./img/logo.png" alt="Logo"></a>
             </div>
-            <ul colspan="3" class="ulcabecalho">
+            <ul class="ulcabecalho">
                 <li><a href="index.html" class="linavbar">Home</a></li>
                 <li><a href="Diss.html" class="linavbar">Discussões</a></li>
                 <li><a href="discord.html" class="linavbar">Discord</a></li>
@@ -27,22 +29,21 @@
         <img id="template" src="./img/template1.png" alt="Template Image">
     </div>
 
-    <div id="containercenter">
-        <h1 style="display: inline-block; text-align: center; font-size: 22px;">Tópicos</h1>
-        <nav class="nav">
+    <div id="containercenter" class="container">
+        <h1 class="titulo">Tópicos</h1>
         <div class="topic">
-            <h3>Título</h3>
-            <p>Conteúdo da segunda dúvida.</p>
+            <h3>Título do Tópico</h3>
+            <p>Conteúdo do tópico. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-    </nav>
-    <div class="topic">
-        <h3>Título</h3>
-        <p>Conteúdo da segunda dúvida.</p>
-    </div>
-    <div class="topic">
-        <h3>Título</h3>
-        <p>Conteúdo da segunda dúvida.</p>
-    </div>
+        <div class="topic">
+            <h3>Outro Tópico</h3>
+            <p>Conteúdo do outro tópico. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+        <div class="topic">
+            <h3>Mais um Tópico</h3>
+            <p>Conteúdo do mais um tópico. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur.</p>
+        </div>
         <!--<?php
         include 'conexao.php';
 
@@ -81,9 +82,12 @@
         }
         ?> -->
     </div>
-    <footer>
-        <div class="rowfooter"></div>
-        <p>teste</p>
+
+    <footer class="footer">
+        <div id="rowfooter" class="rowfooter"></div>
+        <p>© 2024 Verdi Tech - Todos os direitos reservados.
+            Desenvolvido por Gustavo Verdi</p>
     </footer>
 </body>
+
 </html>
