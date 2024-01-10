@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+
+<body>
+
+    <!-- NAV FIXED -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light navegacao">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="./img/logo.png" style="height: 80px"> 
+            </a>
+            <button class="navbar-toggler custom" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Menu Colapso">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto text-light nav-menu">
+                    <li class="nav-item">
+                        <a href="#header" class="nav-link text-light font-weight-bold">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light font-weight-bold">Tópicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light font-weight-bold">Mods</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light font-weight-bold">Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light font-weight-bold" id="servicos">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="templateindex">
+        <img id="template" src="./img/template1.png" alt="Template Image">
+    </div>
+
+    <div id="containercenter" class="container">
+        <h1 class="titulo">Tópicos</h1>
+        <div class="topic">
+            <h3>Título do Tópico</h3>
+            <p>Conteúdo do tópico. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="topic">
+            <h3>Outro Tópico</h3>
+            <p>Conteúdo do outro tópico. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+        <div class="topic">
+            <h3>Mais um Tópico</h3>
+            <p>Conteúdo do mais um tópico. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div id="rowfooter" class="rowfooter"></div>
+        <p>&copy; 2024 Verdi Tech - Todos os direitos reservados. <br>
+            Desenvolvido por Gustavo Verdi.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+    <!--<?php
+    include 'conexao.php';
+
+    $tabela = 'topico';
+
+    $termoBusca = isset($_GET['busca']) ? $_GET['busca'] : '';
+
+    try {
+        if (!empty($termoBusca)) {
+            $stmt = $conexao->prepare("SELECT * FROM $tabela WHERE titulo ILIKE :termo");
+            $stmt->bindValue(':termo', "%$termoBusca%", PDO::PARAM_STR);
+        } else {
+            $stmt = $conexao->query("SELECT * FROM $tabela");
+        }
+
+        $stmt->execute();
+        $topicos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        if (!empty($topicos)) {
+            echo '<table>';
+            echo '<tr class="topic"><th>Título</th><th>Categoria</th><th>Texto</th><th>Usuário</th></tr>';
+            foreach ($topicos as $topico) {
+                echo '<tr class="topic">';
+                echo '<td><h3>' . $topico['titulo'] . '</h3></td>';
+                echo '<td><p>' . $topico['categoria'] . '</p></td>';
+                echo '<td><p>' . $topico['texto'] . '</p></td>';
+                echo '<td><p>' . $topico['usuario'] . '</p></td>';
+                echo '</tr>';
+            }
+            echo '</table>';
+        } else {
+            echo '<p>Nenhum resultado encontrado.</p>';
+        }
+    } catch (PDOException $e) {
+        echo "Erro na consulta ao banco de dados: " . $e->getMessage();
+    }
+    ?> -->

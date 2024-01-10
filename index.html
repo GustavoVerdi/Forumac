@@ -4,27 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="custom.css">
     <title>Fórum</title>
+    <!--SCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
-    <header class="header">
-        <!-- NAVBAR -->
-        <div class="navbarmenu">
-            <div class="logo">
-                <a href="#"><img src="./img/logo.png" alt="Logo"></a>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light navegacao">
+        <div class="containerr">
+            <a href="#" class="navbar-brand">
+            <img src="./img/logo.png" height="30"> 
+            </a>
+            <button class="navbar-toggler custom" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Menu Colapso">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+    
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto text-light nav-menu">
+                    <li class="nav-item">
+                        <a href="#header" class="nav-link text-light font-weight-bold">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light font-weight-bold">MODS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light font-weight-bold">DISCORD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light font-weight-bold">TÓPICOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light font-weight-bold">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light font-weight-bold" id="servicos">LOGIN </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="ulcabecalho">
-                <li><a href="index.html" class="linavbar">Home</a></li>
-                <li><a href="Diss.html" class="linavbar">Discussões</a></li>
-                <li><a href="discord.html" class="linavbar">Discord</a></li>
-                <li><a href="mods.html" class="linavbar">Mods</a></li>
-                <li><a href="login.html" class="linavbar" style="background-color: black;">Login</a></li>
-            </ul>
         </div>
-    </header>
-
+    </nav>
     <div id="templateindex">
         <img id="template" src="./img/template1.png" alt="Template Image">
     </div>
@@ -32,16 +58,16 @@
     <div id="containercenter" class="container">
         <h1 class="titulo">Tópicos</h1>
         <div class="topic">
-            <h3>Outro Tópico</h3>
+            <h3>Título do Tópico</h3>
             <p>Conteúdo do tópico. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="topic">
             <h3>Outro Tópico</h3>
-            <p>Conteúdo do tópico. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <p>Conteúdo do outro tópico. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
         </div>
         <div class="topic">
-            <h3>Outro Tópico</h3>
-            <p>Conteúdo do tópico. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            <h3>Mais um Tópico</h3>
+            <p>Conteúdo do mais um tópico. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                 eu fugiat nulla pariatur.</p>
         </div>
         <!--<?php
@@ -85,9 +111,8 @@
 
     <footer class="footer">
         <div id="rowfooter" class="rowfooter"></div>
-        <p>© 2024 Verdi Tech - Todos os direitos reservados. <br>
+        <p>&copy; 2024 Verdi Tech - Todos os direitos reservados. <br>
             Desenvolvido por Gustavo Verdi.</p>
     </footer>
 </body>
-
 </html>
