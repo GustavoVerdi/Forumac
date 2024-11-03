@@ -1,34 +1,44 @@
 # Conversor de Moedas
+Este projeto é um conversor de moedas que permite a conversão entre Real (BRL), Dólar (USD) e Euro (EUR) utilizando taxas de câmbio obtidas de uma API pública.
 
-Este é um projeto que oferece um conversor de moedas simples, permitindo que você converta entre Real (BRL), Dólar (USD) e Euro (EUR) usando taxas de câmbio que são recuperadas de uma API pública.
-
-## Recursos
-
+## Funcionalidades
 - **Conversão de Moedas**: Converte valores entre diferentes moedas com base nas taxas de câmbio mais recentes.
-- **Validação de Entrada**: Garante que os usuários inserem apenas valores numéricos válidos e positivos.
-- **Interface Intuitiva**: Proporciona uma experiência de usuário agradável e responsiva.
-- **Código Estruturado**: O projeto segue o princípio da separação de preocupações, com código bem organizado em HTML, CSS e JavaScript.
+- **Validação de Entrada**: Assegura que apenas valores numéricos positivos são aceitos.
+- **Interface Amigável**: Proporciona uma experiência de usuário intuitiva e responsiva.
+- **Estrutura de Código Limpa**: O projeto segue o princípio da separação de preocupações, organizando HTML, CSS e JavaScript em arquivos distintos.
 
-## Tecnologias Empregadas
+## Tecnologias Utilizadas
 
-- **HTML**: Estrutura a base da aplicação.
-- **CSS**: Responsável pela estilização e layout.
-- **JavaScript**: Gerencia a lógica do conversor e a comunicação com a API.
-- **API de Câmbio**: Faz uso da [Exchange Rate API](https://open.er-api.com/v6/latest/USD) para obter as taxas de câmbio mais recentes.
+- **HTML**: Para a estruturação da página.
+- **CSS**: Para o estilo e layout da aplicação.
+- **JavaScript**: Para a lógica do conversor de moedas e interações com a API.
+- **API de Taxas de Câmbio**: Utiliza a [Exchange Rate API](https://open.er-api.com/v6/latest/USD) para obter as taxas de câmbio atualizadas.
 
-## Instruções de Uso
+## Como Instalar e Executar
 
 1. **Clone o repositório**:
-   ```bash
+   ```
    git clone https://seu-repositorio-url.git
 Acesse o diretório do projeto:
 
-bash
-cd seu-projeto
-Abra o arquivo index.html em seu navegador: Você pode fazer isso clicando duas vezes no arquivo ou utilizando o menu de arquivos do seu navegador.
+      cd seu-projeto 
+Abra o arquivo index.html em seu navegador: Clique duas vezes no arquivo ou use o menu de arquivos do seu navegador.
 
-Realize a conversão:
+## Como Funciona
+O conversor de moedas utiliza uma taxa de câmbio fixa para simular a conversão entre as moedas. Quando o usuário insere um valor, o sistema valida a entrada e realiza a conversão.
 
-Insira o valor que deseja converter.
-Selecione a moeda de origem e a moeda de destino.
-Clique no botão "Converter" para visualizar o resultado da conversão.
+## Programação Funcional
+O código faz uso de funções de ordem superior como map, filter, e reduce para gerenciar a lógica da conversão e a validação dos dados de entrada.
+
+Exemplos de Entrada e Saída
+Entrada:
+
+Valor: 100
+Moeda de Origem: USD
+Moeda de Destino: BRL
+Saída:
+
+Valor convertido: 200.00 (considerando uma taxa de câmbio fictícia de 2.0)
+
+## Membros do Grupo
+@GustavoVerdi
